@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Juego" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Juego" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Juego" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add directory="SFML/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add library="sfml-audio" />
+			<Add directory="SFML/lib" />
+		</Linker>
+		<Unit filename="include/Animation.h" />
+		<Unit filename="include/Asteroid.h" />
+		<Unit filename="include/Bullet.h" />
+		<Unit filename="include/EnemyShip.h" />
+		<Unit filename="include/Entity.h" />
+		<Unit filename="include/Game.h" />
+		<Unit filename="include/Menu.h" />
+		<Unit filename="include/SelectableText.h" />
+		<Unit filename="include/Ship.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/Animation.cpp" />
+		<Unit filename="src/Asteroid.cpp" />
+		<Unit filename="src/Bullet.cpp" />
+		<Unit filename="src/EnemyShip.cpp" />
+		<Unit filename="src/Entity.cpp" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/Menu.cpp" />
+		<Unit filename="src/SelectableText.cpp" />
+		<Unit filename="src/Ship.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
